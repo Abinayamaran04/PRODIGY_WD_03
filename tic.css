@@ -1,0 +1,61 @@
+body{
+    width:100vw;
+    height:100vh;
+    background-color:blueviolet;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+img{
+    width:95px;
+    height:95px;
+}
+.container
+{
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+}
+.box
+{
+    width:100px;
+    height:100px;
+    border:2px solid white;
+    box-shadow:0 0 0 2px white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    font-size:25px;
+
+}
+#status
+{
+    color:white;
+    padding:20px;
+    font-size:25px;
+    font-weight:500px;
+}
+button{
+    width:150px;
+    height:40px;
+    font-size:18px;
+    color:white;
+    background-color:red;
+border:none;
+border-radius:3px;
+}
+.win
+{
+animation: winAnimation ease-in-out 1s infinite;
+}
+@keyframes winAnimation{
+    0%{
+        border:6px dashed aqua;
+    }
+    100%
+    {
+        border :6px dashed burlywood;
+    }
+}
